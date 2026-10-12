@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#0B100E" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:paddingLeft="24dp"
+        android:paddingTop="30dp" android:paddingRight="24dp"
+        android:paddingBottom="28dp">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="32dp" android:layout_height="32dp"
+                android:gravity="center" android:text="◉" android:textColor="#D8EDB0"
+                android:textSize="27sp" />
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginLeft="10dp"
+                android:text="UNPROCESS" android:textColor="#F6F8EF"
+                android:textSize="15sp" android:textStyle="bold"
+                android:letterSpacing="0.16" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="CAMERA  /  01" android:textColor="#8B9F95"
+                android:textSize="10sp" android:letterSpacing="0.12" />
+        </LinearLayout>
+
+        <FrameLayout android:layout_width="match_parent" android:layout_height="222dp"
+            android:layout_marginTop="32dp" android:background="@drawable/home_hero">
+            <com.reilandeubank.unprocess.fragments.HomeLensArtwork
+                android:layout_width="match_parent" android:layout_height="match_parent" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                android:gravity="bottom" android:orientation="vertical"
+                android:padding="22dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="EL ORIGEN DE CADA IMAGEN" android:textColor="#D8EDB0"
+                    android:textSize="10sp" android:textStyle="bold"
+                    android:letterSpacing="0.12" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp" android:text="Luz real.\nDecisión tuya."
+                    android:textColor="#F7F8F0" android:textSize="31sp"
+                    android:textStyle="bold" android:lineSpacingExtra="2dp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Capturá sin el procesamiento habitual."
+                    android:textColor="#C4D2C8" android:textSize="12sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="30dp" android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="ELEGÍ EL FORMATO"
+                android:textColor="#F7F8F0" android:textSize="12sp"
+                android:textStyle="bold" android:letterSpacing="0.14" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="01  /  02" android:textColor="#7E9588"
+                android:textSize="11sp" />
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="7dp" android:layout_marginBottom="16dp"
+            android:text="Tu estilo empieza antes del disparo."
+            android:textColor="#9CAC9F" android:textSize="14sp" />
+
+        <FrameLayout android:id="@+id/raw_option" android:layout_width="match_parent"
+            android:layout_height="132dp" android:background="@drawable/home_raw_card"
+            android:clickable="true" android:focusable="true"
+            android:contentDescription="Abrir cámara en formato RAW DNG">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_gravity="top|right" android:layout_marginTop="18dp"
+                android:layout_marginRight="22dp" android:text="01 ↗"
+                android:textColor="#4B6252" android:textSize="14sp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_gravity="bottom" android:orientation="vertical"
+                android:paddingLeft="22dp" android:paddingBottom="19dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="RAW" android:textColor="#102019" android:textSize="35sp"
+                    android:textStyle="bold" android:letterSpacing="0.02" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="DNG  ·  Toda la información del sensor"
+                    android:textColor="#3B5645" android:textSize="12sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout android:id="@+id/jpg_option" android:layout_width="match_parent"
+            android:layout_height="132dp" android:layout_marginTop="12dp"
+            android:background="@drawable/home_jpg_card"
+            android:clickable="true" android:focusable="true"
+            android:contentDescription="Abrir cámara en formato JPG desde RAW">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_gravity="top|right" android:layout_marginTop="18dp"
+                android:layout_marginRight="22dp" android:text="02 ↗"
+                android:textColor="#839B8D" android:textSize="14sp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_gravity="bottom" android:orientation="vertical"
+                android:paddingLeft="22dp" android:paddingBottom="19dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="JPG" android:textColor="#F7F8F0" android:textSize="35sp"
+                    android:textStyle="bold" android:letterSpacing="0.02" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Desde RAW  ·  Hasta 8 MP"
+                    android:textColor="#A3B8A9" android:textSize="12sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView android:id="@+id/device_message" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="14dp"
+            android:text="Este teléfono no expone una cámara trasera RAW compatible."
+            android:textColor="#E8A69D" android:visibility="gone" />
+
+        <FrameLayout android:id="@+id/gallery_option" android:layout_width="match_parent"
+            android:layout_height="82dp" android:layout_marginTop="24dp"
+            android:background="@drawable/pro_chip_idle"
+            android:clickable="true" android:focusable="true"
+            android:contentDescription="Ver galería de fotos de Unprocess">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical" android:layout_marginLeft="20dp"
+                android:text="ARCHIVO\nMis capturas" android:textColor="#E5EFDE"
+                android:textSize="15sp" android:lineSpacingExtra="4dp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical" android:layout_marginRight="22dp"
+                android:text="→" android:textColor="#D8EDB0" android:textSize="27sp" />
+        </FrameLayout>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="26dp" android:gravity="center"
+            android:text="RAW DE VERDAD  •  CONTROL TOTAL"
+            android:textColor="#718779" android:textSize="10sp"
+            android:letterSpacing="0.14" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_margin="5dp" android:orientation="vertical" android:background="@drawable/option_card">
+    <ImageView android:id="@+id/photo_image" android:layout_width="match_parent"
+        android:layout_height="145dp" android:scaleType="centerCrop"
+        android:contentDescription="@string/photo" />
+    <TextView android:id="@+id/photo_name" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="8dp"
+        android:ellipsize="middle" android:maxLines="1" android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+</LinearLayout>

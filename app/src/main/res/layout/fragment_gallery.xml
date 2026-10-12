@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#111316" android:padding="16dp">
+    <TextView android:id="@+id/back_button" android:layout_width="wrap_content"
+        android:layout_height="48dp" android:gravity="center_vertical" android:text="← Volver"
+        android:textColor="#B9D8CE" android:textSize="17sp" android:clickable="true" android:focusable="true" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" android:text="Mis fotos" android:textColor="#FFFFFF"
+        android:textSize="30sp" android:textStyle="bold" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" android:layout_marginBottom="20dp"
+        android:text="Capturas de Unprocess en la galería del teléfono"
+        android:textColor="#B8BEC4" android:textSize="14sp" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/photo_grid"
+            android:layout_width="match_parent" android:layout_height="match_parent" />
+        <TextView android:id="@+id/empty_message" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center"
+            android:gravity="center" android:text="Todavía no hay fotos tomadas con la app."
+            android:textColor="#B8BEC4" android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

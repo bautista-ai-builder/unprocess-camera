@@ -1,0 +1,14 @@
+Unprocess Camera
+
+This project is based on unprocess by Reiland Eubank:
+https://github.com/reilandeubank/unprocess
+
+The original unprocess project is based on Android Camera2Basic:
+https://github.com/android/camera-samples/tree/main/Camera2Basic
+
+Original Git history and copyright and license notices in source files are retained.
+This continuation adds a redesigned camera interface, touch focus and exposure,
+flash and Pro controls, RAW-derived JPEG capture, and an in-app gallery.
+
+The source code is distributed under the Apache License, Version 2.0.
+See the LICENSE file for the full license text.
